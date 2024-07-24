@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Bootstrap II: Formulario</title>
+</head>
+<body>
+    <form class="row g-3" action="./assets/pagina_dos.html">
+        <div class="col-md-4">
+          <label for="inputName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputName" value="Marcos" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputSurname" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputSurname" value="Ortega" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputUsername" class="form-label">Nombre de usuario</label>
+            <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="inputUsername" value="marO" required>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" value="New York" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputMotif" class="form-label">Motivo</label>
+          <select id="inputMotif" class="form-select" required>
+            <option selected>Depósito</option>
+            <option>Giro</option>
+            <option>Consulta de Saldo</option>
+          </select>
+        </div>
+    </div>
+        <div class="col-12">
+        <label for="box">¿Desea ver la respuesta en pantalla?</label>
+          <div class="form-check">
+            <input class="form-check-input" name="box" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Sí
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Solicitar</button>
+        </div>
+      </form>
+</body>
+</html>
